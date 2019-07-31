@@ -20,3 +20,29 @@ int[] abc = { 20, 90, 48, 92};
 ```
 求出所有1000以内的质数，并存到数组里，需要考虑数组的自动扩容，最后顺序输出该数组。
 ```
+
+### 4. 思考以下代码的输出结果
+```
+public class Demo {
+    public static void main(String[] args) {
+        Person p = new Person("张三");
+
+        change(p);
+
+        System.out.println(p.name);
+    }
+
+    public static void change(Person p) {
+        Person person = new Person("李四");
+        p = person;
+    }
+}
+
+class Person {
+    String name;
+
+    public Person(String name) {
+        this.name = name;
+    }
+}
+```
